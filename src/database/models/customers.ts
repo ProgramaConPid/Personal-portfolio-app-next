@@ -1,0 +1,1 @@
+// Here is going to be the model for customers collection

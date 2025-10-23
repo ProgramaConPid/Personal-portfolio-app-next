@@ -1,6 +1,13 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+:root {
+  --text-primary: #6467f2;
+  --bg-secondary: #07b6d5;
+  --text-muted-foreground: #64748b;
+  --radial-bg: radial-gradient(circle at 50% 120%, rgba(99, 102, 241, .1), transparent 50%);
+}
+
 @custom-variant dark (&:is(.dark *));
 
 .container {
