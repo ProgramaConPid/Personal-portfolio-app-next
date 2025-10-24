@@ -6,21 +6,21 @@ import { roboto } from "@/app/font/fonts";
 
 const Footer = () => {
   return (
-    <footer className="footer py-5 flex items-center justify-between lg:absolute lg:bottom-0 lg:left-0 w-full bg-white border-t border-zinc-400">
+    <footer className="footer py-5 flex items-center justify-between w-full">
       <div className="footer__content container flex justify-between items-center">
         <div className="footer__copy">
-          <p className={`${roboto.className} text-[--dark-color]`}>
+          <p className={`footer__copy--text ${roboto.className}`}>
             © 2025 Portfolio. All rights reserved.
           </p>
         </div>
         <div className="footer__social--media flex gap-5">
-          <Link className="cursor-pointer" href={"https://github.com/ProgramaConPid"} target="_blank">
+          <Link className="footer__social--media-icon cursor-pointer" href={"https://github.com/ProgramaConPid"} target="_blank">
             <LuGithub className="text-[1.3rem]" />
           </Link>
-          <Link className="cursor-pointer" href={"#"} target="_blank">
+          <Link className="footer__social--media-icon cursor-pointer" href={"#"} target="_blank">
             <LuLinkedin className="text-[1.3rem]" />
           </Link>
-          <Link className="cursor-pointer" href={"#"} target="_blank">
+          <Link className="footer__social--media-icon cursor-pointer" href={"#"} target="_blank">
             <RiTiktokLine className="text-[1.3rem]" />
           </Link>
         </div>

@@ -2,19 +2,79 @@
 @import "tw-animate-css";
 
 :root {
-  --text-primary: #6467f2;
-  --bg-secondary: #07b6d5;
-  --text-muted-foreground: #64748b;
-  --radial-bg: radial-gradient(circle at 50% 120%, rgba(99, 102, 241, .1), transparent 50%);
+  /* Primary Colors */
+  --dark-background: #0B0F19;
+  --primary-color: #6366F1;
+  --secondary-color: #06B6D4;
+  --accent-color: #A855F7;
+  --text-foreground: #F1F5F9;
+
+  /* Secondary Colors */
+  --card: #0D1219;
+  --muted-foreground: #94a3b8;
+  --muted: hsl(217.2 32.6% 17.5%);
+  --border-dark: #1e293b;
+  --destructive: hsl(0 62.8% 30.6%);
+
+  /* Light Theme */
+  --light-background: hsl(210 22% 98%);
+  --light-text: hsl(215 20% 10%);
+  --light-card: #FFFFFF;
+  --border: hsl(214.3 31.8% 91.4%);
 }
 
 @custom-variant dark (&:is(.dark *));
+
+/* General Styles */
+body {
+  background: radial-gradient(circle at center, var(--dark-background) 0%, #020617 100%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-foreground);
+}
+
+p {
+  color: var(--muted-foreground);
+}
 
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  overflow: hidden;
+}
+
+.badge {
+  font-size: 13px;
+  color: var(--text-foreground);
+  font-weight: 600;
+  background-color: var(--secondary-color);
+}
+
+/* Navbar Styles */
+nav {
+  color: var(--text-foreground);
+  background-color: var(--dark-background);
+  border-bottom: 2px solid var(--border-dark);
+}
+
+.nav__link {
+  color: var(--muted-foreground);
+  font-weight: bold;
+}
+
+.nav__icon--theme {
+  color: var(--muted-foreground);
+}
+
+/* Footer Styles */
+footer {
+  background-color: var(--dark-background);
+  border-top: 2px solid var(--border-dark);
+}
+
+.footer__social--media-icon {
+  color: var(--muted-foreground);
 }
 
 @theme inline {

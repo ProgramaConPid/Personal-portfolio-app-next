@@ -4,23 +4,23 @@ import { roboto, montserrat } from "@/app/font/fonts";
 
 const Navbar = () => {
   return (
-    <nav className="nav py-5 bg-white border-b border-zinc-400 absolute top-0 left-0 w-full">
+    <nav className="nav py-5 bg-white w-full">
       <div className="container__nav container flex justify-between">
         <div className="nav__logo">
           <h2 className={`font-bold text-[1.3rem] ${montserrat.className}`}>Felipe Marin</h2>
         </div>
         <div className="nav__links flex gap-10 items-center">
           <ul className={`nav__list flex gap-5 ${roboto.className}`}>
-            <Link href={"/"}>
+            <Link className="nav__link" href={"/"}>
               Home
             </Link>
-            <Link href={"/about"}>
+            <Link className="nav__link" href={"/about"}>
               About
             </Link>
-            <Link href={"/projects"}>
+            <Link className="nav__link" href={"/projects"}>
               Projects
             </Link>
-            <Link href={"/contact"}>
+            <Link className="nav__link" href={"/contact"}>
               Contact
             </Link>
           </ul>

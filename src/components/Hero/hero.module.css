@@ -1,0 +1,107 @@
+:root {
+  /* Primary Colors */
+  --dark-background: #0B0F19;
+  --primary-color: #6366F1;
+  --secondary-color: #06B6D4;
+  --accent-color: #A855F7;
+  --text-foreground: #F1F5F9;
+
+  /* Secondary Colors */
+  --card: #0D1219;
+  --muted-foreground: #94a3b8;
+  --muted: hsl(217.2 32.6% 17.5%);
+  --border-dark: #1e293b;
+  --destructive: hsl(0 62.8% 30.6%);
+
+  /* Light Theme */
+  --light-background: hsl(210 22% 98%);
+  --light-text: hsl(215 20% 10%);
+  --light-card: #FFFFFF;
+  --border: hsl(214.3 31.8% 91.4%);
+}
+
+.hero__container {
+  padding-block: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero__texts {
+  width: 50%;
+}
+
+.hero__habilities {
+  color: var(--accent-color);
+  font-weight: bold;
+  font-size: 13px;
+  margin-bottom: .4rem;
+}
+
+.hero__title {
+  font-weight: bold;
+  font-size: clamp(1.2rem, 6vw, 2.8rem);
+}
+
+.hero__titleModifier {
+  background: linear-gradient(to right, var(--secondary-color), var(--accent-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero__position {
+  color: var(--muted-foreground);
+  font-size: clamp(1.2rem, 5vw, 1.6rem);
+  font-weight: 500;
+}
+
+.hero__info {
+  display: grid;
+  gap: .4rem;
+  margin: .5rem 0;
+}
+
+.hero__buttons {
+  margin: 1rem 0 1.6rem 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.hero__button {
+  color: var(--text-foreground);
+  padding: 7px 20px;
+  border-radius: .6rem;
+}
+
+.hero__buttonProjects {
+  background-color: var(--primary-color);
+}
+
+.hero__buttonContact {
+  border: 1px solid var(--border-dark);
+}
+
+.hero__skillsTitle {
+  color: var(--muted-foreground);
+  margin-top: 2.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.hero__skillsTechnologies {
+  display: flex;
+  gap: .4rem;
+  flex-wrap: wrap;
+}
+
+@media (width <= 768px) {
+  .hero__container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .hero__texts {
+    width: 100%;
+  }
+}
