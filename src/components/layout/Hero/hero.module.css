@@ -2,15 +2,18 @@
   /* Primary Colors */
   --dark-background: #0B0F19;
   --primary-color: #6366F1;
+  --primary-bg: hsla(239, 85%, 67%, 0.226);
   --secondary-color: #06B6D4;
+  --secondary-bg: #06b5d434;
   --accent-color: #A855F7;
+  --accent-bg: #a955f731;
   --text-foreground: #F1F5F9;
 
   /* Secondary Colors */
-  --card: #0D1219;
+  --card: #0b111e;
   --muted-foreground: #94a3b8;
   --muted: hsl(217.2 32.6% 17.5%);
-  --border-dark: #1e293b;
+  --border-dark: hsl(217, 33%, 17%);
   --destructive: hsl(0 62.8% 30.6%);
 
   /* Light Theme */

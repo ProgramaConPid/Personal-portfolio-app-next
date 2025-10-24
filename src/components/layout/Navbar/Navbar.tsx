@@ -1,8 +1,13 @@
+"use client"
+
 import Link from "next/link"
 import { FaRegMoon } from "react-icons/fa";
 import { roboto, montserrat } from "@/app/font/fonts";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const pathname = usePathname();
+
   return (
     <nav className="nav py-5 bg-white w-full">
       <div className="container__nav container flex justify-between">
@@ -11,16 +16,16 @@ const Navbar = () => {
         </div>
         <div className="nav__links flex gap-10 items-center">
           <ul className={`nav__list flex gap-5 ${roboto.className}`}>
-            <Link className="nav__link" href={"/"}>
+            <Link className={`nav__link ${pathname === "/" ? "active" : "" }`} href={"/"}>
               Home
             </Link>
-            <Link className="nav__link" href={"/about"}>
+            <Link className={`nav__link ${pathname === "/about" ? "active" : "" }`} href={"/about"}>
               About
             </Link>
-            <Link className="nav__link" href={"/projects"}>
+            <Link className={`nav__link ${pathname === "/projects" ? "active" : "" }`} href={"/projects"}>
               Projects
             </Link>
-            <Link className="nav__link" href={"/contact"}>
+            <Link className={`nav__link ${pathname === "/contact" ? "active" : "" }`} href={"/contact"}>
               Contact
             </Link>
           </ul>

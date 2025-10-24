@@ -1,0 +1,146 @@
+:root {
+  /* Primary Colors */
+  --dark-background: radial-gradient(circle at center, #0B0F19 0%, #020617 100%);;
+  --primary-color: #6366F1;
+  --primary-bg: hsla(239, 85%, 67%, 0.226);
+  --secondary-color: #06B6D4;
+  --secondary-bg: #06b5d434;
+  --accent-color: #A855F7;
+  --accent-bg: #a955f731;
+  --text-foreground: #F1F5F9;
+
+  /* Secondary Colors */
+  --card: #0b111e;
+  --muted-foreground: #94a3b8;
+  --muted: hsl(217.2 32.6% 17.5%);
+  --border-dark: hsl(217, 33%, 17%);
+  --destructive: hsl(0 62.8% 30.6%);
+
+  /* Light Theme */
+  --light-background: hsl(210 22% 98%);
+  --light-text: hsl(215 20% 10%);
+  --light-card: #FFFFFF;
+  --border: hsl(214.3 31.8% 91.4%);
+}
+
+.about__container {
+  padding-block: 80px;
+}
+
+.about__title {
+  text-align: center;
+  font-size: clamp(1.5rem, 6vw, 2.8rem);
+  font-weight: 700;
+}
+
+.about__paragraph {
+  margin-top: .5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.container__boxes {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.box {
+  background-color: var(--card);
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.primary__box {
+  border: 1px solid var(--primary-bg);
+}
+
+.secondary__box {
+  border: 1px solid var(--secondary-bg);
+}
+
+.accent__box {
+  border: 1px solid var(--accent-bg);
+}
+
+.box__header{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.box__headerTitle {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.box__containerTexts{
+  display: grid;
+  gap: 1.5rem;
+}
+
+.box__containerHabilities {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.box__habilities {
+  width: 310px;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: var(--dark-background);
+  border: 1px solid var(--muted);
+}
+
+.box__habilitiesTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: .6rem;
+}
+
+.habilities {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+
+.icon__containerCode,
+.icon__containerLight,
+.icon__containerHeart {
+  padding: 10px;
+  border-radius: .3rem;
+}
+
+.box__icon {
+  font-size: 1.4rem;
+}
+
+.icon__containerCode {
+  background-color: var(--primary-bg);
+  border: 1px solid var(--primary-color);
+}
+
+.box__iconCode {
+  color: var(--primary-color);
+}
+
+.icon__containerLight {
+  background-color: var(--secondary-bg);
+  border: 1px solid var(--secondary-color);
+}
+
+.box__iconLight {
+  color: var(--secondary-color);
+}
+
+.icon__containerHeart {
+  background-color: var(--accent-bg);
+  border: 1px solid var(--accent-color);
+}
+
+.box__iconHeart {
+  color: var(--accent-color);
+}

@@ -1,15 +1,17 @@
-import Badge from "../ui/Badge";
+import Badge from "@/components/ui/Badge";
 import styles from "./hero.module.css";
 import HeroAvatar from "@/components/ui/Hero_Image/HeroAvatar";
 import { roboto, montserrat } from "@/app/font/fonts";
-import { arraySkills } from "@/interfaces/main";
+import { arraySkills } from "@/utils/utils";
+import Button from "@/components/ui/Button";
+import { GoArrowRight } from "react-icons/go";
 
 const Hero = () => {
   return (
     <div className={`container ${styles.hero__container}`}>
       <div className={`${styles.hero__texts}`}>
         <p className={`${styles.hero__habilities} ${roboto.className}`}>
-          ✨ DEVELOPER - CREADOR - INNOVADOR
+          ✨ DEVELOPER - CREATOR - INNOVATIVE
         </p>
 
         <h2 className={`${styles.hero__title} ${montserrat.className}`}>
@@ -29,16 +31,12 @@ const Hero = () => {
         </div>
 
         <div className={`${styles.hero__buttons}`}>
-          <button
-            className={`${styles.hero__button} ${styles.hero__buttonProjects}`}
-          >
+          <Button link="/projects" background={"bg-primary"} rightIcon={<GoArrowRight />}>
             Watch projects
-          </button>
-          <button
-            className={`${styles.hero__button} ${styles.hero__buttonContact}`}
-          >
+          </Button>
+          <Button link="/contact" background={"bg-dark"} rightIcon={<GoArrowRight />}>
             Contact me
-          </button>
+          </Button>
         </div>
 
         <div className={`${styles.hero__skills}`}>
@@ -46,7 +44,7 @@ const Hero = () => {
           <div className={`${styles.hero__skillsTechnologies}`}>
             {arraySkills && (
               arraySkills.map((skill, index) => (
-                <Badge key={index} text={skill} />
+                <Badge key={index} text={skill} textColor={"text-foreground"} background={"secondary-color"} />
               ))
             )}
           </div>

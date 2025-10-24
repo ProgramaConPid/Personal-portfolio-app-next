@@ -1,0 +1,33 @@
+:root {
+  /* Primary Colors */
+  --dark-background: radial-gradient(circle at center, #0B0F19 0%, #020617 100%);;
+  --primary-color: #6366F1;
+  --primary-bg: hsla(239, 85%, 67%, 0.226);
+  --secondary-color: #06B6D4;
+  --secondary-bg: #06b5d434;
+  --accent-color: #A855F7;
+  --accent-bg: #a955f731;
+  --text-foreground: #F1F5F9;
+
+  /* Secondary Colors */
+  --card: #0b111e;
+  --muted-foreground: #94a3b8;
+  --muted: hsl(217.2 32.6% 17.5%);
+  --border-dark: hsl(217, 33%, 17%);
+  --destructive: hsl(0 62.8% 30.6%);
+
+  /* Light Theme */
+  --light-background: hsl(210 22% 98%);
+  --light-text: hsl(215 20% 10%);
+  --light-card: #FFFFFF;
+  --border: hsl(214.3 31.8% 91.4%);
+}
+
+.project__card {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid var(--muted);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
