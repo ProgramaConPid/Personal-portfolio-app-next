@@ -1,3 +1,7 @@
+/*
+  Container for the hero avatar image
+  - Circular shape, gradient background, shadow, blur effect, and center alignment
+*/
 .hero__imageContainer {
   position: relative;
   width: 350px;
@@ -14,6 +18,10 @@
   overflow: hidden;
 }
 
+/*
+  Decorative overlay for the avatar container
+  - Adds a blurred radial gradient for depth and glow effect
+*/
 .hero__imageContainer::before {
   content: "";
   position: absolute;
@@ -26,6 +34,10 @@
   filter: blur(30px);
 }
 
+/*
+  Emoji style for the hero avatar
+  - Large size, positioned above overlay
+*/
 .hero__emoji {
   font-size: 6rem;
   position: relative;

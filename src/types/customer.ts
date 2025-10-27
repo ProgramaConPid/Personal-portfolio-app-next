@@ -1,3 +1,4 @@
+// Type for Customer
 export type ICustomer = {
   messageId: number;
   fullName: string;

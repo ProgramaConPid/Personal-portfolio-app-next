@@ -1,5 +1,6 @@
 import { ProjectProps } from "@/interfaces/main";
 
+// Array of porjects with their properties
 export const arrayProjects: ProjectProps[] = [
   {
     projectId: 1,
@@ -87,6 +88,7 @@ export const arrayProjects: ProjectProps[] = [
   }
 ]
 
+// Array of skills to use in a component
 export const arraySkills:  string[] = [
   "HTML",
   "CSS",

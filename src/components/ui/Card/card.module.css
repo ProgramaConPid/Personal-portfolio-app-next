@@ -1,20 +1,39 @@
+/*
+  Root CSS variables for color palette and backgrounds
+  - Main colors for card, text, accents, and backgrounds
+  - Used throughout the card component for consistent theming
+*/
 :root {
-  /* Colores principales */
-  --dark-background: radial-gradient(circle at center, #0B0F19 0%, #020617 100%);
-  --primary-color: #6366F1;
-  --primary-bg: hsla(239, 85%, 67%, 0.226);
-  --secondary-color: #06B6D4;
-  --accent-color: #A855F7;
-  --text-foreground: #F1F5F9;
+  /* Main colors */
+  --dark-background: radial-gradient(
+    circle at center,
+    #0b0f19 0%,
+    #020617 100%
+  ); /* Background gradient */
+  --primary-color: #6366f1; /* Primary accent color */
+  --primary-bg: hsla(
+    239,
+    85%,
+    67%,
+    0.226
+  ); /* Primary background with transparency */
+  --secondary-color: #06b6d4; /* Secondary accent color */
+  --accent-color: #a855f7; /* Additional accent color */
+  --text-foreground: #f1f5f9; /* Main text color */
 
-  /* Colores secundarios */
-  --card: #0b111e;
-  --muted-foreground: #94a3b8;
-  --muted: hsl(217.2 32.6% 17.5%);
-  --border-dark: hsl(217, 33%, 17%);
+  /* Secondary colors */
+  --card: #0b111e; /* Card background color */
+  --muted-foreground: #94a3b8; /* Muted text color */
+  --muted: hsl(217.2 32.6% 17.5%); /* Muted background color */
+  --border-dark: hsl(217, 33%, 17%); /* Card border color */
 }
 
-/* ===== CARD PRINCIPAL ===== */
+/*
+  Main card container styles
+  - Padding, rounded corners, border, background, and layout
+  - Uses flexbox for vertical layout and spacing
+  - Responsive height and smooth transitions
+*/
 .project__card {
   padding: 1.5rem;
   border-radius: 0.75rem;
@@ -28,15 +47,23 @@
   overflow: hidden;
 
   height: 100%;
-  min-height: 480px; 
+  min-height: 480px;
 }
 
+/*
+  Card hover effect
+  - Slight upward movement, shadow, and border color change
+*/
 .project__card:hover {
   transform: translateY(-6px);
   box-shadow: 0 8px 20px rgba(99, 102, 241, 0.15);
   border-color: var(--primary-color);
 }
 
+/*
+  Project image styles
+  - Full width, fixed height, rounded corners, and smooth scaling on hover
+*/
 .project__image {
   width: 100%;
   height: 220px;
@@ -45,11 +72,18 @@
   transition: transform 400ms ease;
 }
 
+/*
+  Image hover effect inside card
+  - Slightly scales up the image for emphasis
+*/
 .project__card:hover .project__image {
   transform: scale(1.03);
 }
 
-/* ===== INFO ===== */
+/*
+  Card info section
+  - Uses grid layout for spacing between title, description, and technologies
+*/
 .project__cardInfo {
   flex: 1;
   padding-block: 1rem;
@@ -57,18 +91,30 @@
   gap: 0.6rem;
 }
 
+/*
+  Card title styles
+  - Responsive font size, bold, and main text color
+*/
 .card__infoTitle {
   font-size: clamp(1.2rem, 4vw, 1.5rem);
   font-weight: 700;
   color: var(--text-foreground);
 }
 
+/*
+  Card description paragraph
+  - Standard font size, line height, and muted color
+*/
 .card__infoParagraph {
   font-size: 1rem;
   line-height: 1.6;
   color: var(--muted-foreground);
 }
 
+/*
+  Technologies section
+  - Flexbox layout for wrapping technology badges
+*/
 .card__infoTechnologies {
   display: flex;
   flex-wrap: wrap;
@@ -76,6 +122,11 @@
   margin-top: 0.4rem;
 }
 
+/*
+  Card buttons section
+  - Flexbox layout for action buttons (GitHub, Demo, etc.)
+  - Centered and spaced
+*/
 .project__cardButtons {
   display: flex;
   gap: 1rem;
@@ -85,6 +136,10 @@
   padding-top: 1rem;
 }
 
+/*
+  Responsive styles for tablets (max-width: 1024px)
+  - Adjusts card padding, image height, and title font size
+*/
 @media (max-width: 1024px) {
   .project__card {
     padding: 1.25rem;
@@ -100,6 +155,10 @@
   }
 }
 
+/*
+  Responsive styles for mobile devices (max-width: 768px)
+  - Further reduces card and image size, adjusts paragraph font
+*/
 @media (max-width: 768px) {
   .project__card {
     padding: 1.1rem;
@@ -115,11 +174,15 @@
   }
 }
 
+/*
+  Responsive styles for small mobile screens (max-width: 480px)
+  - Minimal padding, smaller image, rounded corners, and vertical button layout
+*/
 @media (max-width: 480px) {
   .project__card {
     padding: 1rem;
     border-radius: 0.6rem;
-    min-height: auto; 
+    min-height: auto;
   }
 
   .project__image {

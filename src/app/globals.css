@@ -1,31 +1,35 @@
+/* Import Tailwind CSS and animation utilities */
 @import "tailwindcss";
 @import "tw-animate-css";
 
 :root {
-  /* Primary Colors */
-  --dark-background: radial-gradient(circle at center, #0B0F19 0%, #020617 100%);;
-  --primary-color: #6366F1;
+  /* Root variables for colors, backgrounds, and theme */
+  --dark-background: radial-gradient(
+    circle at center,
+    #0b0f19 0%,
+    #020617 100%
+  );
+  --primary-color: #6366f1;
   --primary-bg: hsla(239, 85%, 67%, 0.226);
-  --secondary-color: #06B6D4;
+  --secondary-color: #06b6d4;
   --secondary-bg: #06b5d434;
-  --accent-color: #A855F7;
+  --accent-color: #a855f7;
   --accent-bg: #a955f731;
-  --text-foreground: #F1F5F9;
+  --text-foreground: #f1f5f9;
 
-  /* Secondary Colors */
   --card: #0b111e;
   --muted-foreground: #94a3b8;
   --muted: hsl(217.2 32.6% 17.5%);
   --border-dark: hsl(217, 33%, 17%);
   --destructive: hsl(0 62.8% 30.6%);
 
-  /* Light Theme */
   --light-background: hsl(210 22% 98%);
   --light-text: hsl(215 20% 10%);
-  --light-card: #FFFFFF;
+  --light-card: #ffffff;
   --border: hsl(214.3 31.8% 91.4%);
 }
 
+/* Custom variant for dark mode */
 @custom-variant dark (&:is(.dark *));
 
 /* General Styles */
@@ -33,18 +37,27 @@ body {
   background: var(--dark-background);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-foreground);
   color: var(--text-foreground);
 }
 
+
 p {
   color: var(--muted-foreground);
+  /* Container utility class for layout */
 }
 
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+  /* Badge styles for skill tags */
 }
 
 .badge {
@@ -85,6 +98,7 @@ p {
 .badge__accent-bg {
   background-color: var(--accent-bg);
   border: 1px solid var(--accent-color);
+  /* Button backgrounds */
 }
 
 .bg-primary {
@@ -101,6 +115,7 @@ p {
 
 .bg-dark:hover {
   background-color: var(--primary-color);
+  /* Navbar Styles */
 }
 
 /* Navbar Styles */
@@ -120,6 +135,7 @@ nav {
 }
 
 .nav__icon--theme {
+  /* Footer Styles */
   color: var(--muted-foreground);
 }
 

@@ -1,13 +1,18 @@
+/* Root variables for colors, backgrounds, and theme */
 :root {
   /* Primary Colors */
-  --dark-background: radial-gradient(circle at center, #0B0F19 0%, #020617 100%);
-  --primary-color: #6366F1;
+  --dark-background: radial-gradient(
+    circle at center,
+    #0b0f19 0%,
+    #020617 100%
+  );
+  --primary-color: #6366f1;
   --primary-bg: hsla(239, 85%, 67%, 0.226);
-  --secondary-color: #06B6D4;
+  --secondary-color: #06b6d4;
   --secondary-bg: #06b5d434;
-  --accent-color: #A855F7;
+  --accent-color: #a855f7;
   --accent-bg: #a955f731;
-  --text-foreground: #F1F5F9;
+  --text-foreground: #f1f5f9;
 
   /* Secondary Colors */
   --card: #0b111e;
@@ -19,11 +24,11 @@
   /* Light Theme */
   --light-background: hsl(210 22% 98%);
   --light-text: hsl(215 20% 10%);
-  --light-card: #FFFFFF;
+  --light-card: #ffffff;
   --border: hsl(214.3 31.8% 91.4%);
 }
 
-/* === GENERAL STRUCTURE === */
+/* Main container for about page */
 .about__container {
   padding-top: 120px; /* más separación del navbar */
   padding-bottom: 120px; /* más separación del footer */
@@ -31,6 +36,7 @@
   z-index: 1;
 }
 
+/* Title for about section */
 .about__title {
   text-align: center;
   font-size: clamp(1.5rem, 6vw, 2.8rem);
@@ -38,6 +44,7 @@
   color: var(--text-foreground);
 }
 
+/* Paragraph under the about title */
 .about__paragraph {
   margin-top: 0.5rem;
   font-size: 1.2rem;
@@ -46,7 +53,7 @@
   color: var(--muted-foreground);
 }
 
-/* === BOXES === */
+/* Container for info boxes */
 .container__boxes {
   display: grid;
   grid-template-columns: 1fr; /* una columna en todas las pantallas */
@@ -54,6 +61,7 @@
   margin-top: 4rem;
 }
 
+/* Individual info box styles */
 .box {
   background-color: var(--card);
   padding: 1.8rem;
@@ -62,24 +70,27 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Hover effect for info box */
 .box:hover {
   transform: scale(1.02);
 }
 
-/* Box types */
+/* Primary box border */
 .primary__box {
   border: 1px solid var(--primary-bg);
 }
 
+/* Secondary box border */
 .secondary__box {
   border: 1px solid var(--secondary-bg);
 }
 
+/* Accent box border */
 .accent__box {
   border: 1px solid var(--accent-bg);
 }
 
-/* Header */
+/* Box header styles */
 .box__header {
   display: flex;
   align-items: center;
@@ -87,25 +98,27 @@
   margin-bottom: 1rem;
 }
 
+/* Box header title */
 .box__headerTitle {
   font-size: 1.3rem;
   font-weight: bold;
   color: var(--text-foreground);
 }
 
-/* Texts */
+/* Container for box texts */
 .box__containerTexts {
   display: grid;
   gap: 1.2rem;
 }
 
+/* Individual box text */
 .box__text {
   color: var(--muted-foreground);
   line-height: 1.6;
   font-size: 1rem;
 }
 
-/* === HABILITIES === */
+/* Container for skills/habilities */
 .box__containerHabilities {
   display: flex;
   justify-content: space-between;
@@ -114,6 +127,7 @@
   margin-top: 1.5rem;
 }
 
+/* Individual skill box */
 .box__habilities {
   flex: 1 1 300px;
   min-width: 260px;
@@ -124,11 +138,13 @@
   transition: 0.3s ease;
 }
 
+/* Hover effect for skill box */
 .box__habilities:hover {
   border-color: var(--primary-bg);
   box-shadow: 0 0 10px var(--primary-bg);
 }
 
+/* Title for skill box */
 .box__habilitiesTitle {
   font-size: 1.2rem;
   font-weight: 700;
@@ -136,13 +152,14 @@
   margin-bottom: 0.6rem;
 }
 
+/* Skills list */
 .habilities {
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
 }
 
-/* === ICONS === */
+/* Icon containers for different box types */
 .icon__containerCode,
 .icon__containerLight,
 .icon__containerHeart {
@@ -153,38 +170,45 @@
   justify-content: center;
 }
 
+/* Icon size */
 .box__icon {
   font-size: 1.4rem;
 }
 
+/* Code icon container */
 .icon__containerCode {
   background-color: var(--primary-bg);
   border: 1px solid var(--primary-color);
 }
 
+/* Code icon color */
 .box__iconCode {
   color: var(--primary-color);
 }
 
+/* Light icon container */
 .icon__containerLight {
   background-color: var(--secondary-bg);
   border: 1px solid var(--secondary-color);
 }
 
+/* Light icon color */
 .box__iconLight {
   color: var(--secondary-color);
 }
 
+/* Heart icon container */
 .icon__containerHeart {
   background-color: var(--accent-bg);
   border: 1px solid var(--accent-color);
 }
 
+/* Heart icon color */
 .box__iconHeart {
   color: var(--accent-color);
 }
 
-/* === RESPONSIVE === */
+/* Responsive styles for tablets */
 @media (max-width: 1024px) {
   .box__containerHabilities {
     flex-direction: column;
@@ -198,6 +222,7 @@
   }
 }
 
+/* Responsive styles for mobile */
 @media (max-width: 768px) {
   .about__paragraph {
     font-size: 1.1rem;

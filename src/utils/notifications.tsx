@@ -1,6 +1,7 @@
 import { toast } from "react-toastify";
 import { CustomToast } from "../components/ui/customToast";
 
+// Custom notifications using react-toastify library
 export const customNotification = (
   title: string,
   message: string,

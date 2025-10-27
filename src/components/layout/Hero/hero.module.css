@@ -1,28 +1,27 @@
+/* Root variables for colors, backgrounds, and theme */
 :root {
-  /* Primary Colors */
-  --dark-background: #0B0F19;
-  --primary-color: #6366F1;
+  --dark-background: #0b0f19;
+  --primary-color: #6366f1;
   --primary-bg: hsla(239, 85%, 67%, 0.226);
-  --secondary-color: #06B6D4;
+  --secondary-color: #06b6d4;
   --secondary-bg: #06b5d434;
-  --accent-color: #A855F7;
+  --accent-color: #a855f7;
   --accent-bg: #a955f731;
-  --text-foreground: #F1F5F9;
+  --text-foreground: #f1f5f9;
 
-  /* Secondary Colors */
   --card: #0b111e;
   --muted-foreground: #94a3b8;
   --muted: hsl(217.2 32.6% 17.5%);
   --border-dark: hsl(217, 33%, 17%);
   --destructive: hsl(0 62.8% 30.6%);
 
-  /* Light Theme */
   --light-background: hsl(210 22% 98%);
   --light-text: hsl(215 20% 10%);
-  --light-card: #FFFFFF;
+  --light-card: #ffffff;
   --border: hsl(214.3 31.8% 91.4%);
 }
 
+/* Main container for hero section */
 .hero__container {
   padding-block: 120px;
   display: flex;
@@ -30,74 +29,91 @@
   justify-content: space-around;
 }
 
+/* Container for hero text content */
 .hero__texts {
   width: 50%;
 }
 
+/* Subtitle for hero section (skills/roles) */
 .hero__habilities {
   color: var(--accent-color);
   font-weight: bold;
   font-size: 13px;
-  margin-bottom: .4rem;
+  margin-bottom: 0.4rem;
 }
 
+/* Main title for hero section */
 .hero__title {
   font-weight: bold;
   font-size: clamp(1.2rem, 6vw, 2.8rem);
 }
 
+/* Highlighted name in hero title */
 .hero__titleModifier {
-  background: linear-gradient(to right, var(--secondary-color), var(--accent-color));
+  background: linear-gradient(
+    to right,
+    var(--secondary-color),
+    var(--accent-color)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
 }
 
+/* Job position text */
 .hero__position {
   color: var(--muted-foreground);
   font-size: clamp(1.2rem, 5vw, 1.6rem);
   font-weight: 500;
 }
 
+/* Info section under hero title */
 .hero__info {
   display: grid;
-  gap: .4rem;
-  margin: .5rem 0;
+  gap: 0.4rem;
+  margin: 0.5rem 0;
 }
 
+/* Button group for hero actions */
 .hero__buttons {
   margin: 1rem 0 1.6rem 0;
   display: flex;
   gap: 1rem;
 }
 
+/* General button styles in hero */
 .hero__button {
   color: var(--text-foreground);
   padding: 7px 20px;
-  border-radius: .6rem;
+  border-radius: 0.6rem;
 }
 
+/* Projects button background */
 .hero__buttonProjects {
   background-color: var(--primary-color);
 }
 
+/* Contact button border */
 .hero__buttonContact {
   border: 1px solid var(--border-dark);
 }
 
+/* Title for skills section */
 .hero__skillsTitle {
   color: var(--muted-foreground);
   margin-top: 2.2rem;
   margin-bottom: 1.2rem;
 }
 
+/* Container for technology badges */
 .hero__skillsTechnologies {
   display: flex;
-  gap: .4rem;
+  gap: 0.4rem;
   flex-wrap: wrap;
 }
 
+/* Responsive styles for mobile */
 @media (width <= 768px) {
   .hero__container {
     flex-direction: column;

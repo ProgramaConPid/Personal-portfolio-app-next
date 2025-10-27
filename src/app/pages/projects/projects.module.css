@@ -1,12 +1,17 @@
+/* Root variables for colors, backgrounds, and theme */
 :root {
-  --dark-background: radial-gradient(circle at center, #0B0F19 0%, #020617 100%);
-  --primary-color: #6366F1;
+  --dark-background: radial-gradient(
+    circle at center,
+    #0b0f19 0%,
+    #020617 100%
+  );
+  --primary-color: #6366f1;
   --primary-bg: hsla(239, 85%, 67%, 0.226);
-  --secondary-color: #06B6D4;
+  --secondary-color: #06b6d4;
   --secondary-bg: #06b5d434;
-  --accent-color: #A855F7;
+  --accent-color: #a855f7;
   --accent-bg: #a955f731;
-  --text-foreground: #F1F5F9;
+  --text-foreground: #f1f5f9;
 
   --card: #0b111e;
   --muted-foreground: #94a3b8;
@@ -16,15 +21,17 @@
 
   --light-background: hsl(210 22% 98%);
   --light-text: hsl(215 20% 10%);
-  --light-card: #FFFFFF;
+  --light-card: #ffffff;
   --border: hsl(214.3 31.8% 91.4%);
 }
 
+/* Main section for projects page */
 .projects__section {
-  padding-block: 80px; 
+  padding-block: 80px;
   position: relative;
 }
 
+/* Title for projects section */
 .projects__sectionTitle {
   text-align: center;
   font-size: clamp(1.5rem, 6vw, 2.8rem);
@@ -33,6 +40,7 @@
   line-height: 1.2;
 }
 
+/* Paragraph under the section title */
 .projects__sectionParagraph {
   margin-top: 0.5rem;
   font-size: 1.3rem;
@@ -43,7 +51,7 @@
   margin-inline: auto;
 }
 
-/* ===== GRID ===== */
+/* Grid container for project cards */
 .projects__container {
   margin-top: 3rem;
   display: grid;
@@ -51,10 +59,10 @@
   gap: 3rem;
   position: relative;
   z-index: 2;
-  align-items: stretch; /* todas las columnas igual altura */
+  align-items: stretch;
 }
 
-/* ===== TARJETAS ===== */
+/* Individual project card styles */
 .project__card {
   height: 100%;
   display: flex;
@@ -66,40 +74,37 @@
   transition: 0.3s ease;
 }
 
+/* Hover effect for project card */
 .project__card:hover {
   scale: 1.03;
   border-color: var(--primary-bg);
   box-shadow: 0 0 15px 5px var(--primary-bg);
 }
 
-/* Imagen */
+/* Project image styles */
 .project__image {
   height: 200px;
   object-fit: cover;
   border-radius: 0.6rem;
 }
 
-/* Info */
+/* Info section inside project card */
 .project__cardInfo {
   padding-block: 1rem;
   display: grid;
   gap: 0.6rem;
 }
 
-/* Botones */
+/* Button group for project card actions */
 .project__cardButtons {
   display: flex;
   gap: 1rem;
   align-items: center;
   justify-content: center;
-  margin-top: auto; /* empuja los botones al final */
+  margin-top: auto;
 }
 
-/* ===========================================================
-   🧠 RESPONSIVE DESIGN
-=========================================================== */
-
-/* Tablets grandes / pantallas medianas */
+/* Responsive styles for tablets */
 @media (max-width: 1024px) {
   .projects__container {
     grid-template-columns: 1fr 1fr;
@@ -115,7 +120,7 @@
   }
 }
 
-/* Tablets verticales / móviles grandes */
+/* Responsive styles for mobile */
 @media (max-width: 768px) {
   .projects__container {
     grid-template-columns: 1fr;
@@ -136,7 +141,7 @@
   }
 }
 
-/* Móviles pequeños */
+/* Extra small devices */
 @media (max-width: 480px) {
   .projects__section {
     padding-block: 60px;

@@ -1,13 +1,16 @@
+/* Main container for contact page */
 .container__contact {
   padding-block: 120px;
 }
 
+/* Title for contact section */
 .contact__title {
   text-align: center;
   font-size: clamp(1.5rem, 6vw, 2.8rem);
   font-weight: 700;
 }
 
+/* Paragraph under the contact title */
 .contact__paragraph {
   margin-top: 0.5rem;
   font-size: 1.3rem;
@@ -16,6 +19,7 @@
   color: var(--muted-foreground);
 }
 
+/* Grid layout for contact content */
 .grid__contact {
   margin-top: 2rem;
   display: grid;
@@ -24,6 +28,7 @@
   align-items: start;
 }
 
+/* Aside section for social media and info */
 .contact__aside {
   display: flex;
   flex-direction: column;
@@ -31,6 +36,7 @@
   gap: 2rem;
 }
 
+/* Social media card styles */
 .contact__socialMedia {
   padding: 20px;
   border-radius: 0.5rem;
@@ -38,17 +44,20 @@
   border: 1px solid var(--muted);
 }
 
+/* Title for social media card */
 .social__mediaTitle {
   font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
+/* Paragraph for social media card */
 .social__mediaParagraph {
   color: var(--muted-foreground);
   font-size: 0.95rem;
 }
 
+/* Container for social media links */
 .social__mediaLinks {
   margin-top: 1rem;
   display: flex;
@@ -56,6 +65,7 @@
   gap: 1rem;
 }
 
+/* Individual social media link styles */
 .social__mediaLink {
   display: flex;
   align-items: center;
@@ -67,38 +77,45 @@
   transition: 400ms ease;
 }
 
+/* Icon styles for social media */
 .social__icon {
   transition: 400ms ease;
 }
 
+/* Icon hover animation */
 .social__icon:hover {
   transform: rotate(360deg);
 }
 
+/* GitHub link hover effect */
 .social__mediaGithub:hover {
   border-color: var(--primary-color);
 }
 
+/* LinkedIn link hover effect */
 .social__mediaLinkedin:hover {
   color: var(--primary-color);
   border-color: var(--primary-color);
 }
 
+/* TikTok link hover effect */
 .social__mediaTiktok:hover {
   color: var(--secondary-color);
   border-color: var(--secondary-color);
 }
 
+/* Email link hover effect */
 .social__mediaEmail:hover {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
 
+/* Text for social media links */
 .social__mediaText {
   font-weight: 600;
 }
 
-/* ===== QUOTE SECTION ===== */
+/* Card for additional social info */
 .social__mediaTexts {
   background-color: var(--card);
   padding: 15px;
@@ -109,16 +126,19 @@
   gap: 0.5rem;
 }
 
+/* Title for additional social info */
 .social__textsTitle {
   color: var(--muted-foreground);
   font-weight: 700;
 }
 
+/* Description for additional social info */
 .social__textsDescription {
   color: var(--muted-foreground);
   font-size: 0.95rem;
 }
 
+/* Responsive styles for tablets */
 @media (max-width: 1024px) {
   .grid__contact {
     grid-template-columns: 1fr 1fr;
@@ -126,6 +146,7 @@
   }
 }
 
+/* Responsive styles for mobile */
 @media (max-width: 768px) {
   .grid__contact {
     grid-template-columns: 1fr;
@@ -159,6 +180,7 @@
   }
 }
 
+/* Extra small devices */
 @media (max-width: 480px) {
   .grid__contact {
     gap: 2rem;

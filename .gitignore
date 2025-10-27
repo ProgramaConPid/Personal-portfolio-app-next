@@ -10,6 +10,7 @@
 !.yarn/releases
 !.yarn/versions
 key-api.json
+new-key-api.json
 
 # testing
 /coverage

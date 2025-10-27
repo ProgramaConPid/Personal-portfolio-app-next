@@ -1,16 +1,25 @@
+// Enable client-side rendering for this page
 "use client";
 
+// Animation library
 import { motion } from "framer-motion";
+// CSS module for styling
 import styles from "./about.module.css";
+// Icons for section headers
 import { FaCode } from "react-icons/fa6";
 import { TiLightbulb } from "react-icons/ti";
 import { FaRegHeart } from "react-icons/fa";
+// Badge component for skills/tools
 import Badge from "@/components/ui/Badge";
+// Custom fonts
 import { roboto, montserrat } from "@/app/font/fonts";
+// Animated background particles
 import BackgroundParticles from "@/components/ui/BackgroundParticles";
 
+// About page component
 export default function About() {
   return (
+    // Main container for about page with staggered animation
     <motion.div
       className={`container ${styles.about__container}`}
       initial="hidden"
@@ -22,7 +31,10 @@ export default function About() {
         visible: { opacity: 1, transition: { staggerChildren: 0.2 } },
       }}
     >
+      {/* Animated background particles */}
       <BackgroundParticles />
+
+      {/* Page title with animation */}
       <motion.h2
         className={`${styles.about__title} ${montserrat.className}`}
         initial={{ opacity: 0, y: 20 }}
@@ -32,6 +44,7 @@ export default function About() {
         About Me
       </motion.h2>
 
+      {/* Subtitle/paragraph with animation */}
       <motion.p
         className={styles.about__paragraph}
         initial={{ opacity: 0, y: 20 }}
@@ -41,6 +54,7 @@ export default function About() {
         Learn more about my background and skills.
       </motion.p>
 
+      {/* Container for info boxes with staggered animation */}
       <motion.div
         className={styles.container__boxes}
         variants={{
@@ -48,6 +62,7 @@ export default function About() {
           visible: { transition: { staggerChildren: 0.3 } },
         }}
       >
+        {/* Box 1 - Who I am */}
         <motion.div
           className={`${styles.primary__box} ${styles.box}`}
           variants={{
@@ -60,6 +75,7 @@ export default function About() {
           }}
           transition={{ duration: 0.4 }}
         >
+          {/* Header with icon and title */}
           <div className={styles.box__header}>
             <figure className={styles.icon__containerCode}>
               <FaCode
@@ -69,6 +85,7 @@ export default function About() {
             <h3 className={styles.box__headerTitle}>Who I am</h3>
           </div>
 
+          {/* Description texts */}
           <div className={`${styles.box__containerTexts} ${roboto.className}`}>
             <p className={styles.box__text}>
               I&apos;m a full-stack developer passionate about building modern,
@@ -91,7 +108,7 @@ export default function About() {
           </div>
         </motion.div>
 
-        {/* Box 2 - Habilities */}
+        {/* Box 2 - Skills/Habilities */}
         <motion.div
           className={`${styles.secondary__box} ${styles.box}`}
           variants={{
@@ -104,6 +121,7 @@ export default function About() {
           }}
           transition={{ duration: 0.4 }}
         >
+          {/* Header with icon and title */}
           <div className={styles.box__header}>
             <figure className={styles.icon__containerLight}>
               <TiLightbulb
@@ -113,10 +131,12 @@ export default function About() {
             <h3 className={styles.box__headerTitle}>Habilities</h3>
           </div>
 
+          {/* Technologies and tools subtitle */}
           <p className={styles.box__text}>Technologies and tools I work with</p>
 
+          {/* Skills grouped by category */}
           <div className={styles.box__containerHabilities}>
-            {/* Frontend */}
+            {/* Frontend skills */}
             <div className={styles.box__habilities}>
               <h3 className={styles.box__habilitiesTitle}>Frontend</h3>
               <div className={styles.habilities}>
@@ -139,7 +159,7 @@ export default function About() {
               </div>
             </div>
 
-            {/* Backend */}
+            {/* Backend skills */}
             <div className={styles.box__habilities}>
               <h3 className={styles.box__habilitiesTitle}>Backend</h3>
               <div className={styles.habilities}>
@@ -196,6 +216,7 @@ export default function About() {
           }}
           transition={{ duration: 0.4 }}
         >
+          {/* Header with icon and title */}
           <div className={styles.box__header}>
             <figure className={styles.icon__containerHeart}>
               <FaRegHeart
@@ -205,6 +226,7 @@ export default function About() {
             <h3 className={styles.box__headerTitle}>What motivates me</h3>
           </div>
 
+          {/* Motivation texts */}
           <div className={`${styles.box__containerTexts} ${roboto.className}`}>
             <p className={styles.box__text}>
               I&apos;m passionate about technology and its ability to transform
