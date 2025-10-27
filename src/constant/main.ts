@@ -9,10 +9,10 @@ export const arrayProjects: ProjectProps[] = [
     githubLink: "",
     demoLink: "",
     badgeArray: [
-      {text: "Next.js", textColor: "badge__text-primary-color", background: "badge__primary-bg"},
-      {text: "Typescript", textColor: "badge__text-secondary-color", background: "badge__secondary-bg"},
-      {text: "Stripe", textColor: "badge__text-accent-color", background: "badge__accent-bg"},
-      {text: "MongoDB", textColor: "badge__text-primary-color", background: "badge__primary-bg"}
+      {text: "Next.js", textColor: "text-primary-color", background: "primary-bg"},
+      {text: "Typescript", textColor: "text-secondary-color", background: "secondary-bg"},
+      {text: "Stripe", textColor: "text-accent-color", background: "accent-bg"},
+      {text: "MongoDB", textColor: "text-primary-color", background: "primary-bg"}
     ]
   },
   {
@@ -23,10 +23,10 @@ export const arrayProjects: ProjectProps[] = [
     githubLink: "",
     demoLink: "",
     badgeArray: [
-      {text: "Next.js", textColor: "badge__text-primary-color", background: "badge__primary-bg"},
-      {text: "Typescript", textColor: "badge__text-secondary-color", background: "badge__secondary-bg"},
-      {text: "Stripe", textColor: "badge__text-accent-color", background: "badge__accent-bg"},
-      {text: "MongoDB", textColor: "badge__text-primary-color", background: "badge__primary-bg"}
+      {text: "Next.js", textColor: "text-primary-color", background: "primary-bg"},
+      {text: "Typescript", textColor: "text-secondary-color", background: "secondary-bg"},
+      {text: "Stripe", textColor: "text-accent-color", background: "accent-bg"},
+      {text: "MongoDB", textColor: "text-primary-color", background: "primary-bg"}
     ]
   },
   {
@@ -37,10 +37,10 @@ export const arrayProjects: ProjectProps[] = [
     githubLink: "",
     demoLink: "",
     badgeArray: [
-      {text: "Next.js", textColor: "badge__text-primary-color", background: "badge__primary-bg"},
-      {text: "Typescript", textColor: "badge__text-secondary-color", background: "badge__secondary-bg"},
-      {text: "Stripe", textColor: "badge__text-accent-color", background: "badge__accent-bg"},
-      {text: "MongoDB", textColor: "badge__text-primary-color", background: "badge__primary-bg"}
+      {text: "Next.js", textColor: "text-primary-color", background: "primary-bg"},
+      {text: "Typescript", textColor: "text-secondary-color", background: "secondary-bg"},
+      {text: "Stripe", textColor: "text-accent-color", background: "accent-bg"},
+      {text: "MongoDB", textColor: "text-primary-color", background: "primary-bg"}
     ]
   },
   {
@@ -51,10 +51,10 @@ export const arrayProjects: ProjectProps[] = [
     githubLink: "",
     demoLink: "",
     badgeArray: [
-      {text: "Next.js", textColor: "badge__text-primary-color", background: "badge__primary-bg"},
-      {text: "Typescript", textColor: "badge__text-secondary-color", background: "badge__secondary-bg"},
-      {text: "Stripe", textColor: "badge__text-accent-color", background: "badge__accent-bg"},
-      {text: "MongoDB", textColor: "badge__text-primary-color", background: "badge__primary-bg"}
+      {text: "Next.js", textColor: "text-primary-color", background: "primary-bg"},
+      {text: "Typescript", textColor: "text-secondary-color", background: "secondary-bg"},
+      {text: "Stripe", textColor: "text-accent-color", background: "accent-bg"},
+      {text: "MongoDB", textColor: "text-primary-color", background: "primary-bg"}
     ]
   },
   {
@@ -65,10 +65,10 @@ export const arrayProjects: ProjectProps[] = [
     githubLink: "",
     demoLink: "",
     badgeArray: [
-      {text: "Next.js", textColor: "badge__text-primary-color", background: "badge__primary-bg"},
-      {text: "Typescript", textColor: "badge__text-secondary-color", background: "badge__secondary-bg"},
-      {text: "Stripe", textColor: "badge__text-accent-color", background: "badge__accent-bg"},
-      {text: "MongoDB", textColor: "badge__text-primary-color", background: "badge__primary-bg"}
+      {text: "Next.js", textColor: "text-primary-color", background: "primary-bg"},
+      {text: "Typescript", textColor: "text-secondary-color", background: "secondary-bg"},
+      {text: "Stripe", textColor: "text-accent-color", background: "accent-bg"},
+      {text: "MongoDB", textColor: "text-primary-color", background: "primary-bg"}
     ]
   },
   {
@@ -79,10 +79,25 @@ export const arrayProjects: ProjectProps[] = [
     githubLink: "",
     demoLink: "",
     badgeArray: [
-      {text: "Next.js", textColor: "badge__text-primary-color", background: "badge__primary-bg"},
-      {text: "Typescript", textColor: "badge__text-secondary-color", background: "badge__secondary-bg"},
-      {text: "Stripe", textColor: "badge__text-accent-color", background: "badge__accent-bg"},
-      {text: "MongoDB", textColor: "badge__text-primary-color", background: "badge__primary-bg"}
+      {text: "Next.js", textColor: "text-primary-color", background: "primary-bg"},
+      {text: "Typescript", textColor: "text-secondary-color", background: "secondary-bg"},
+      {text: "Stripe", textColor: "text-accent-color", background: "accent-bg"},
+      {text: "MongoDB", textColor: "text-primary-color", background: "primary-bg"}
     ]
   }
+]
+
+export const arraySkills:  string[] = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Next.js",
+  "Typescript",
+  "Node.js",
+  "MongoDB",
+  "MySQL",
+  "WebSockets", 
+  "Tailwind CSS",
+  "Framer-motion"
 ]

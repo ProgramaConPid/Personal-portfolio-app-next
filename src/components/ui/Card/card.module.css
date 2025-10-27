@@ -1,0 +1,137 @@
+:root {
+  /* Colores principales */
+  --dark-background: radial-gradient(circle at center, #0B0F19 0%, #020617 100%);
+  --primary-color: #6366F1;
+  --primary-bg: hsla(239, 85%, 67%, 0.226);
+  --secondary-color: #06B6D4;
+  --accent-color: #A855F7;
+  --text-foreground: #F1F5F9;
+
+  /* Colores secundarios */
+  --card: #0b111e;
+  --muted-foreground: #94a3b8;
+  --muted: hsl(217.2 32.6% 17.5%);
+  --border-dark: hsl(217, 33%, 17%);
+}
+
+/* ===== CARD PRINCIPAL ===== */
+.project__card {
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--border-dark);
+  background: var(--card);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 300ms ease;
+  position: relative;
+  overflow: hidden;
+
+  height: 100%;
+  min-height: 480px; 
+}
+
+.project__card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.15);
+  border-color: var(--primary-color);
+}
+
+.project__image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  transition: transform 400ms ease;
+}
+
+.project__card:hover .project__image {
+  transform: scale(1.03);
+}
+
+/* ===== INFO ===== */
+.project__cardInfo {
+  flex: 1;
+  padding-block: 1rem;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.card__infoTitle {
+  font-size: clamp(1.2rem, 4vw, 1.5rem);
+  font-weight: 700;
+  color: var(--text-foreground);
+}
+
+.card__infoParagraph {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--muted-foreground);
+}
+
+.card__infoTechnologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+}
+
+.project__cardButtons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .project__card {
+    padding: 1.25rem;
+    min-height: 440px;
+  }
+
+  .project__image {
+    height: 200px;
+  }
+
+  .card__infoTitle {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .project__card {
+    padding: 1.1rem;
+    min-height: 420px;
+  }
+
+  .project__image {
+    height: 180px;
+  }
+
+  .card__infoParagraph {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project__card {
+    padding: 1rem;
+    border-radius: 0.6rem;
+    min-height: auto; 
+  }
+
+  .project__image {
+    height: 160px;
+  }
+
+  .card__infoTitle {
+    font-size: 1.2rem;
+  }
+
+  .project__cardButtons {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+}

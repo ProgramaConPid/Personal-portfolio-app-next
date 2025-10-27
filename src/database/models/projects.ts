@@ -1,1 +1,0 @@
-// Here is going to be the model for projects collection

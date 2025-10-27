@@ -6,6 +6,7 @@ export interface ButtonProps {
   background: string;
   link: string;
   rightIcon?:JSX.Element;
+  flex?: string;
 }
 
 export interface BadgeProps {

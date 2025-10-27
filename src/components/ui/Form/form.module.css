@@ -1,0 +1,78 @@
+:root {
+  /* Primary Colors */
+  --dark-background: radial-gradient(circle at center, #0B0F19 0%, #020617 100%);;
+  --primary-color: #6366F1;
+  --primary-bg: hsla(239, 85%, 67%, 0.226);
+  --secondary-color: #06B6D4;
+  --secondary-bg: #06b5d434;
+  --accent-color: #A855F7;
+  --accent-bg: #a955f731;
+  --text-foreground: #F1F5F9;
+
+  /* Secondary Colors */
+  --card: #0b111e;
+  --muted-foreground: #94a3b8;
+  --muted: hsl(217.2 32.6% 17.5%);
+  --border-dark: hsl(217, 33%, 17%);
+  --destructive: hsl(0 62.8% 30.6%);
+
+  /* Light Theme */
+  --light-background: hsl(210 22% 98%);
+  --light-text: hsl(215 20% 10%);
+  --light-card: #FFFFFF;
+  --border: hsl(214.3 31.8% 91.4%);
+}
+
+.form {
+  padding: 20px;
+  border: 1px solid var(--muted);
+  border-radius: .4rem;
+  background-color: var(--card);
+}
+
+.form__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.form__groups {
+  margin-top: 1.3rem;
+  display: grid;
+  gap: 1.2rem;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+}
+
+.form__label {
+  color: var(--text-foreground);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.form__input,
+.form__textarea {
+  padding: 10px;  
+  border-radius: .3rem;
+  color: var(--text-foreground);
+  border: 1px solid var(--muted);
+  background: var(--dark-background);
+}
+
+.form__textarea {
+  resize: none;
+  height: 150px;
+}
+
+.form__button {
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 10px;
+  color: var(--text-foreground);
+  border-radius: .4rem;
+  margin-top: 1.2rem;
+  cursor: pointer;
+}

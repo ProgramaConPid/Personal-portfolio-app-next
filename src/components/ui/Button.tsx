@@ -1,9 +1,9 @@
 import { ButtonProps } from "@/interfaces/main"
 import Link from "next/link"
 
-const Button = ({leftIcon, children, rightIcon, link, background}: ButtonProps) => {
+const Button = ({leftIcon, children, rightIcon, link, background, flex}: ButtonProps) => {
   return (
-    <Link className={`${background} py-2 px-3 rounded-[.6rem] flex items-center justify-center gap-4`} href={link}>
+    <Link className={`${background} py-2 px-3 rounded-[.6rem] flex items-center justify-center ${flex} gap-2.5 `} href={link}>
       {leftIcon}
       <span>
         {children}
